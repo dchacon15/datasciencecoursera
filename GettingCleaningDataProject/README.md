@@ -2,11 +2,11 @@
 
 This is the GitHub repository for the Getting and Cleaning Data course project created by Daniel Chacon. This project takes a raw data and creates a tidy data file ready to be processed.
 This repository folder contains the following items:
-* 'run_analysis.R' is a R script in charge of transforming the raw data to the tidy data.
+* `run_analysis.R` is a R script in charge of transforming the raw data to the tidy data.
 * a code book for the Tidy Data file explaining the variables,and summaries calculated, along with units, and any other relevant information found.
 * also includes the raw data used to create the tidy data set.
 
-The 'run_analysis.R' R scripts do the following:
+The `run_analysis.R` R scripts do the following:
  1. Downloads the raw data in case it doesn't exists and creates a folder with the information
  2. Creates the train and test data set merging data from the following files:
 	* subject files: this file contains the subjects for each observation
