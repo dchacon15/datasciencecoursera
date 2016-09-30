@@ -13,7 +13,7 @@ The `run_analysis.R` R scripts do the following:
 	* Y files: the file contains the activities for each observation
 	* X files: this file contains the observations
  3. Merge the data train and test data sets and name each variable with the correct name
-	* each variable name comes from the file 'feature.txt' file and adds the `activity` and `subject` variable names
+	* each variable name comes from the file `feature.txt` file and adds the `activity` and `subject` variable names
  4. Filters the column variables and only selects the ones that the name contains `mean` or `std` also `activity` and `subject` are maintained.
  5. The information in the `activity` column is cast as factor and the levels are changed 
 	* the levels are found in the `activity_lables.txt` file
