@@ -4,7 +4,7 @@ This file describes the variables, the data, and any transformations or work tha
 ##Variables and data
 
 The tidy data has the following variables:
-*activity
+ * activity
 	Activity Type
 		Values:
 			1 WALKING
@@ -13,67 +13,67 @@ The tidy data has the following variables:
 			4 SITTING
 			5 STANDING
 			6 LAYING
-*subject
+ * subject
 	Subject that created the observation
 		Values:
 			from 1 to 30                                   
-*timeBodyAccelerationMeanX
+ * timeBodyAccelerationMeanX
 	Mean of time to obtain the body acceleration in the X axis
 		Values:
 			from -1 to 1        
-*timeBodyAccelerationMeanY 
+ * timeBodyAccelerationMeanY 
 	Mean of time to obtain the body acceleration in the Y axis
 		Values:
 			from -1 to 1                     
-*timeBodyAccelerationMeanZ
+ * timeBodyAccelerationMeanZ
 	Mean of time to obtain the body acceleration in the Z axis
 		Values:
 			from -1 to 1                    
-*timeGravityAccelerationMeanX   
+ * timeGravityAccelerationMeanX   
 	Mean of time to obtain the gravity acceleration in the X axis
 		Values:
 			from -1 to 1           
-*timeGravityAccelerationMeanY    
+ * timeGravityAccelerationMeanY    
 	Mean of time to obtain the gravity acceleration in the Y axis
 		Values:
 			from -1 to 1        
-*timeGravityAccelerationMeanZ   
+ * timeGravityAccelerationMeanZ   
 	Mean of time to obtain the gravity acceleration in the Z axis
 		Values:
 			from -1 to 1         
-*timeBodyAccelerationJerkMeanX   
+ * timeBodyAccelerationJerkMeanX   
 	Mean of time to obtain the jerk acceleration in the X axis
 		Values:
 			from -1 to 1                   
-*timeBodyAccelerationJerkMeanY    
+ * timeBodyAccelerationJerkMeanY    
 	Mean of time to obtain the jerk acceleration in the Y axis
 		Values:
 			from -1 to 1                           
-*timeBodyAccelerationJerkMeanZ   
+ * timeBodyAccelerationJerkMeanZ   
 	Mean of time to obtain the jerk acceleration in the Z axis
 		Values:
 			from -1 to 1                             
-*timeBodyGyroscopeMeanX          
+ * timeBodyGyroscopeMeanX          
 	Mean of time to obtain the body gyroscope in the X axis
 		Values:
 			from -1 to 1                            
-*timeBodyGyroscopeMeanY         
+ * timeBodyGyroscopeMeanY         
 	Mean of time to obtain the body gyroscope in the Y axis
 		Values:
 			from -1 to 1                          
-*timeBodyGyroscopeMeanZ      
+ * timeBodyGyroscopeMeanZ      
 	Mean of time to obtain the body gyroscope in the Z axis
 		Values:
 			from -1 to 1                            
-*timeBodyGyroscopeJerkMeanX   
+ * timeBodyGyroscopeJerkMeanX   
 	Mean of time to obtain the jerk gyroscope in the X axis
 		Values:
 			from -1 to 1                            
-*timeBodyGyroscopeJerkMeanY   
+ * timeBodyGyroscopeJerkMeanY   
 	Mean of time to obtain the Jerk gyroscope in the Y axis
 		Values:
 			from -1 to 1                           
-*timeBodyGyroscopeJerkMeanZ   
+ *timeBodyGyroscopeJerkMeanZ   
 	Mean of time to obtain the Jerk gyroscope in the Z axis
 		Values:
 			from -1 to 1                            
@@ -81,31 +81,31 @@ The tidy data has the following variables:
 	Mean of time to obtain the body acceleration magnitude
 		Values:
 			from -1 to 1                      
-*timeGravityAccelerationMagnitudeMean  
+* timeGravityAccelerationMagnitudeMean  
 	Mean of time to obtain the gravity acceleration magnitude
 		Values:
 			from -1 to 1                     
-*timeBodyAccelerationJerkMagnitudeMean 
+ * timeBodyAccelerationJerkMagnitudeMean 
 	Mean of time to obtain the Jerk acceleration magnitude
 		Values:
 			from -1 to 1                    
-*timeBodyGyroscopeMagnitudeMean 
+ * timeBodyGyroscopeMagnitudeMean 
 	Mean of time to obtain the body gyroscope magnitude
 		Values:
 			from -1 to 1                            
-*timeBodyGyroscopeJerkMagnitudeMean   
+ * timeBodyGyroscopeJerkMagnitudeMean   
 	Mean of time to obtain the Jerk gyroscope magnitude
 		Values:
 			from -1 to 1      
-*frecuencyBodyAccelerationMeanX  
+ * frecuencyBodyAccelerationMeanX  
 	Mean of frequency to obtain the body acceleration in the X axis
 		Values:
 			from -1 to 1            
-*frecuencyBodyAccelerationMeanY   
+ * frecuencyBodyAccelerationMeanY   
 	Mean of frequency to obtain the body acceleration in the Y axis
 		Values:
 			from -1 to 1                     
-*frecuencyBodyAccelerationMeanZ           
+ * frecuencyBodyAccelerationMeanZ           
 	Mean of frequency to obtain the body acceleration in the Z axis
 		Values:
 			from -1 to 1              
@@ -113,19 +113,19 @@ The tidy data has the following variables:
 	Mean of frequency to obtain the body Jerk acceleration in the X axis
 		Values:
 			from -1 to 1             
-*frecuencyBodyAccelerationJerkMeanY  
+ * frecuencyBodyAccelerationJerkMeanY  
 	Mean of frequency to obtain the body Jerk acceleration in the Y axis
 		Values:
 			from -1 to 1                    
-*frecuencyBodyAccelerationJerkMeanZ      
+ * frecuencyBodyAccelerationJerkMeanZ      
 	Mean of frequency to obtain the body Jerk acceleration in the Z axis
 		Values:
 			from -1 to 1               
-*frecuencyBodyGyroscopeMeanX      
+ * frecuencyBodyGyroscopeMeanX      
 	Mean of frequency to obtain the body gyroscope in the X axis
 		Values:
 			from -1 to 1                  
-*frecuencyBodyGyroscopeMeanY       
+ * frecuencyBodyGyroscopeMeanY       
 	Mean of frequency to obtain the body gyroscope in the Y axis
 		Values:
 			from -1 to 1                   
