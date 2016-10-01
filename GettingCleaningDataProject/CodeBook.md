@@ -6,12 +6,12 @@ This file describes the variables that are found in the the `TidiData.txt` gener
  * activity
 	* Activity Type
 		* Values:
-			1. WALKING
-			2. WALKING_UPSTAIRS
-			3. WALKING_DOWNSTAIRS
-			4. SITTING
-			5. STANDING
-			6. LAYING
+			* 1. WALKING
+			* 2. WALKING_UPSTAIRS
+			* 3. WALKING_DOWNSTAIRS
+			* 4. SITTING
+			* 5. STANDING
+			* 6. LAYING
  * subject
 	* Subject that created the observation
 		* Values:from 1 to 30                                   
@@ -34,148 +34,182 @@ This file describes the variables that are found in the the `TidiData.txt` gener
 	* Mean of time to obtain the gravity acceleration in the Z axis
 		* Values:from -1 to 1
  * timeBodyAccelerationJerkMeanX   
-	* Mean of time to obtain the jerk acceleration in the X axis
+	* Mean of time to obtain the acceleration jerk in the X axis
 		* Values:from -1 to 1
  * timeBodyAccelerationJerkMeanY    
-	* Mean of time to obtain the jerk acceleration in the Y axis
+	* Mean of time to obtain the acceleration jerk in the Y axis
 		* Values:from -1 to 1
  * timeBodyAccelerationJerkMeanZ   
-	* Mean of time to obtain the jerk acceleration in the Z axis
+	* Mean of time to obtain the acceleration jerk in the Z axis
 		* Values:from -1 to 1
  * timeBodyGyroscopeMeanX          
-	Mean of time to obtain the body gyroscope in the X axis
+	* Mean of time to obtain the body gyroscope in the X axis
 		* Values:from -1 to 1  
  * timeBodyGyroscopeMeanY         
-	Mean of time to obtain the body gyroscope in the Y axis
+	* Mean of time to obtain the body gyroscope in the Y axis
 		* Values:from -1 to 1                      
  * timeBodyGyroscopeMeanZ      
-	Mean of time to obtain the body gyroscope in the Z axis
+	* Mean of time to obtain the body gyroscope in the Z axis
 		* Values:from -1 to 1                 
  * timeBodyGyroscopeJerkMeanX   
-	Mean of time to obtain the jerk gyroscope in the X axis
+	* Mean of time to obtain the gyroscope jerk in the X axis
 		* Values:from -1 to 1                
  * timeBodyGyroscopeJerkMeanY   
-	Mean of time to obtain the Jerk gyroscope in the Y axis
+	* Mean of time to obtain the gyroscope jerk in the Y axis
 		* Values:from -1 to 1                 
  * timeBodyGyroscopeJerkMeanZ   
-	Mean of time to obtain the Jerk gyroscope in the Z axis
+	* Mean of time to obtain the gyroscope jerk in the Z axis
 		* Values:from -1 to 1     
-* timeBodyAccelerationMagnitudeMean 
-	Mean of time to obtain the body acceleration magnitude
+ * timeBodyAccelerationMagnitudeMean 
+	* Mean of time to obtain the body acceleration magnitude
 		* Values:from -1 to 1                   
-* timeGravityAccelerationMagnitudeMean  
-	Mean of time to obtain the gravity acceleration magnitude
+ * timeGravityAccelerationMagnitudeMean  
+	* Mean of time to obtain the gravity acceleration magnitude
 		* Values:from -1 to 1                
  * timeBodyAccelerationJerkMagnitudeMean 
-	Mean of time to obtain the Jerk acceleration magnitude
+	* Mean of time to obtain the acceleration jerk magnitude
 		* Values:from -1 to 1     
  * timeBodyGyroscopeMagnitudeMean 
-	Mean of time to obtain the body gyroscope magnitude
+	* Mean of time to obtain the body gyroscope magnitude
 		* Values:from -1 to 1  
  * timeBodyGyroscopeJerkMagnitudeMean   
-	Mean of time to obtain the Jerk gyroscope magnitude
+	* Mean of time to obtain the gyroscope jerk magnitude
 		* Values:from -1 to 1
- * frecuencyBodyAccelerationMeanX  
-	Mean of frequency to obtain the body acceleration in the X axis
+ * frequencyBodyAccelerationMeanX  
+	* Mean of frequency to obtain the body acceleration in the X axis
 		* Values:from -1 to 1
- * frecuencyBodyAccelerationMeanY   
-	Mean of frequency to obtain the body acceleration in the Y axis
+ * frequencyBodyAccelerationMeanY   
+	* Mean of frequency to obtain the body acceleration in the Y axis
 		* Values:from -1 to 1
- * frecuencyBodyAccelerationMeanZ           
-	Mean of frequency to obtain the body acceleration in the Z axis
+ * frequencyBodyAccelerationMeanZ           
+	* Mean of frequency to obtain the body acceleration in the Z axis
 		* Values:from -1 to 1   
-* frecuencyBodyAccelerationJerkMeanX       
-	Mean of frequency to obtain the body Jerk acceleration in the X axis
+ * frequencyBodyAccelerationJerkMeanX       
+	* Mean of frequency to obtain the body acceleration jerk in the X axis
 		* Values:from -1 to 1
- * frecuencyBodyAccelerationJerkMeanY  
-	Mean of frequency to obtain the body Jerk acceleration in the Y axis
+ * frequencyBodyAccelerationJerkMeanY  
+	* Mean of frequency to obtain the body acceleration jerk in the Y axis
 		* Values:from -1 to 1              
- * frecuencyBodyAccelerationJerkMeanZ      
-	Mean of frequency to obtain the body Jerk acceleration in the Z axis
+ * frequencyBodyAccelerationJerkMeanZ      
+	* Mean of frequency to obtain the body acceleration jerk in the Z axis
 		* Values:from -1 to 1
- * frecuencyBodyGyroscopeMeanX      
-	Mean of frequency to obtain the body gyroscope in the X axis
+ * frequencyBodyGyroscopeMeanX      
+	* Mean of frequency to obtain the body gyroscope in the X axis
 		* Values:from -1 to 1
- * frecuencyBodyGyroscopeMeanY       
-	Mean of frequency to obtain the body gyroscope in the Y axis
+ * frequencyBodyGyroscopeMeanY       
+	* Mean of frequency to obtain the body gyroscope in the Y axis
 		* Values:from -1 to 1
-* frecuencyBodyGyroscopeMeanZ     
-	Mean of frequency to obtain the body gyroscope in the Z axis
+ * frequencyBodyGyroscopeMeanZ     
+	* Mean of frequency to obtain the body gyroscope in the Z axis
 		* Values:from -1 to 1
-* frecuencyBodyAccelerationMagnitudeMean    
-	Mean of frequency to obtain the body gyroscope magnitude
+ * frequencyBodyAccelerationMagnitudeMean    
+	* Mean of frequency to obtain the body acceleration magnitude
 		* Values:from -1 to 1
-* frecuencyBodyAccelerationJerkMagnitudeMean   
-	Mean of frequency to obtain the body gyroscope magnitude
+ * frequencyBodyAccelerationJerkMagnitudeMean   
+	* Mean of frequency to obtain the body acceleration jerk magnitude
 		* Values:from -1 to 1
-* frecuencyBodyGyroscopeMagnitudeMean  
+ * frequencyBodyGyroscopeMagnitudeMean  
+	* Mean of frequency to obtain the body gyroscope magnitude
 		* Values:from -1 to 1     
-* frecuencyBodyGyroscopeJerkMagnitudeMean  
+ * frequencyBodyGyroscopeJerkMagnitudeMean  
+	* Mean of frequency to obtain the body gyroscope jerk magnitude
 		* Values:from -1 to 1  
-* timeBodyAccelerationStdX               
+ * timeBodyAccelerationStdX               
+	* Standard Deviation of time to obtain the body acceleration in the X axis
 		* Values:from -1 to 1   
-* timeBodyAccelerationStdY
+ * timeBodyAccelerationStdY
+	* Standard Deviation of time to obtain the body acceleration in the Y axis
 		* Values:from -1 to 1  
-* timeBodyAccelerationStdZ      
+ * timeBodyAccelerationStdZ      
+	* Standard Deviation of time to obtain the body acceleration in the Z axis
 		* Values:from -1 to 1            
-* timeGravityAccelerationStdX    
+ * timeGravityAccelerationStdX    
+	* Standard Deviation of time to obtain the gravity acceleration in the X axis
 		* Values:from -1 to 1            
-* timeGravityAccelerationStdY    
+ * timeGravityAccelerationStdY    
+	* Standard Deviation of time to obtain the gravity acceleration in the Y axis
 		* Values:from -1 to 1           
-* timeGravityAccelerationStdZ    
+ * timeGravityAccelerationStdZ    
+	* Standard Deviation of time to obtain the gravity acceleration in the Z axis
 		* Values:from -1 to 1            
-* timeBodyAccelerationJerkStdX    
+ * timeBodyAccelerationJerkStdX  
+	* Standard Deviation of time to obtain the body acceleration jerk in the X axis  
 		* Values:from -1 to 1          
-* timeBodyAccelerationJerkStdY    
+ * timeBodyAccelerationJerkStdY    
+	* Standard Deviation of time to obtain the body acceleration jerk in the Y axis  
 		* Values:from -1 to 1           
-* timeBodyAccelerationJerkStdZ  
+ * timeBodyAccelerationJerkStdZ  
+	* Standard Deviation of time to obtain the body acceleration jerk in the Z axis  
 		* Values:from -1 to 1            
-* timeBodyGyroscopeStdX         
+ * timeBodyGyroscopeStdX        
+	* Standard Deviation of time to obtain the body gyroscope in the X axis   
 		* Values:from -1 to 1             
-* timeBodyGyroscopeStdY         
+ * timeBodyGyroscopeStdY         
+	* Standard Deviation of time to obtain the body gyroscope in the Y axis
 		* Values:from -1 to 1            
-* timeBodyGyroscopeStdZ         
+ * timeBodyGyroscopeStdZ         
+	* Standard Deviation of time to obtain the body gyroscope in the Z axis
 		* Values:from -1 to 1             
-* timeBodyGyroscopeJerkStdX     
+ * timeBodyGyroscopeJerkStdX     
+	* Standard Deviation of time to obtain the body gyroscope jerk in the X axis
 		* Values:from -1 to 1            
-* timeBodyGyroscopeJerkStdY     
+ * timeBodyGyroscopeJerkStdY     
+	* Standard Deviation of time to obtain the body gyroscope jerk in the Y axis
 		* Values:from -1 to 1             
-* timeBodyGyroscopeJerkStdZ     
+ * timeBodyGyroscopeJerkStdZ     
+	* Standard Deviation of time to obtain the body gyroscope jerk in the Z axis
 		* Values:from -1 to 1            
-* timeBodyAccelerationMagnitudeStd     
+ * timeBodyAccelerationMagnitudeStd     
+	* Standard Deviation of time to obtain the body acceleration magnitude
 		* Values:from -1 to 1      
-* timeGravityAccelerationMagnitudeStd  
+ * timeGravityAccelerationMagnitudeStd  
+	* Standard Deviation of time to obtain the gravity acceleration magnitude
 		* Values:from -1 to 1     
-* timeBodyAccelerationJerkMagnitudeStd
+ * timeBodyAccelerationJerkMagnitudeStd
+	* Standard Deviation of time to obtain the body acceleration jerk magnitude
 		* Values:from -1 to 1     
-* timeBodyGyroscopeMagnitudeStd       
+ * timeBodyGyroscopeMagnitudeStd   
+	* Standard Deviation of time to obtain the gyroscope magnitude    
 		* Values:from -1 to 1     
-* timeBodyGyroscopeJerkMagnitudeStd   
+ * timeBodyGyroscopeJerkMagnitudeStd   
+	* Standard Deviation of time to obtain the gyroscope jerk magnitude  
 		* Values:from -1 to 1      
-* frecuencyBodyAccelerationStdX       
+ * frequencyBodyAccelerationStdX     
+	* Standard Deviation of frequency to obtain the body acceleration in the X axis    
 		* Values:from -1 to 1     
-* frecuencyBodyAccelerationStdY       
+ * frequencyBodyAccelerationStdY       
+	* Standard Deviation of frequency to obtain the body acceleration in the Y axis
 		* Values:from -1 to 1      
-* frecuencyBodyAccelerationStdZ       
+ * frequencyBodyAccelerationStdZ       
+	* Standard Deviation of frequency to obtain the body acceleration in the Z axis
 		* Values:from -1 to 1     
-* frecuencyBodyAccelerationJerkStdX   
+ * frequencyBodyAccelerationJerkStdX   
+	* Standard Deviation of frequency to obtain the body acceleration in the X axis
 		* Values:from -1 to 1      
-* frecuencyBodyAccelerationJerkStdY   
+ * frequencyBodyAccelerationJerkStdY   
+	* Standard Deviation of frequency to obtain the body acceleration in the Y axis
 		* Values:from -1 to 1     
-* frecuencyBodyAccelerationJerkStdZ   
+ * frequencyBodyAccelerationJerkStdZ   
+	* Standard Deviation of frequency to obtain the body acceleration in the Z axis
 		* Values:from -1 to 1      
-* frecuencyBodyGyroscopeStdX          
+ * frequencyBodyGyroscopeStdX       
+	* Standard Deviation of frequency to obtain the body gyroscope in the X axis   
 		* Values:from -1 to 1     
-* frecuencyBodyGyroscopeStdY          
+ * frequencyBodyGyroscopeStdY          
+	* Standard Deviation of frequency to obtain the body gyroscope in the Y axis
 		* Values:from -1 to 1      
-* frecuencyBodyGyroscopeStdZ          
+ * frequencyBodyGyroscopeStdZ        
+	* Standard Deviation of frequency to obtain the body gyroscope in the Z axis  
 		* Values:from -1 to 1     
-* frecuencyBodyAccelerationMagnitudeStd     
+ * frequencyBodyAccelerationMagnitudeStd     
+	* Standard Deviation of frequency to obtain the body acceleration magnitude
 		* Values:from -1 to 1 
-* frecuencyBodyAccelerationJerkMagnitudeStd 
+ * frequencyBodyAccelerationJerkMagnitudeStd 
+	* Standard Deviation of frequency to obtain the body acceleration jerk magnitude
 		* Values:from -1 to 1
-* frecuencyBodyGyroscopeMagnitudeStd       
+ * frequencyBodyGyroscopeMagnitudeStd       
+	* Standard Deviation of frequency to obtain the body gyroscope magnitude
 		* Values:from -1 to 1  
-* frecuencyBodyGyroscopeJerkMagnitudeStd  
+ * frequencyBodyGyroscopeJerkMagnitudeStd  
+	* Standard Deviation of frequency to obtain the body gyroscope jerk magnitude
 		* Values:from -1 to 1
- 
