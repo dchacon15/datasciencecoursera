@@ -37,9 +37,13 @@ mean(avgMeans)
 
 ###Variance
 ```{r VarianceComparison}
+#Observado
 sd(avgMeans)
+#Esperado se hizo una aprox a la normal por medio del CLT
 sqrt((1/lambda)^2/n)
 var(avgMeans)[1]
+
+#Esperado se hizo una aprox a la normal por medio del CLT
 (1/lambda)^2/n
 ```
 
