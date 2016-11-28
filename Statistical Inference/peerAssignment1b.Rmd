@@ -1,0 +1,113 @@
+---
+title: "Comparing Tooth Growth Between Supplements"
+author: "Daniel Chacon"
+date: "11/27/2016"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Load ToothGrowth Dataset
+```{r LoadLibrary}
+library(datasets)
+library(ggplot2)
+data("ToothGrowth")
+```
+##Basic exploratory data analyses
+```{r ExplAnalysis, fig.align='center'}
+str(ToothGrowth)
+head(ToothGrowth)
+tail(ToothGrowth)
+unique(ToothGrowth$dose)
+g <- ggplot(ToothGrowth, aes(supp,len))
+g <- g + geom_boxplot()
+g <- g + facet_wrap(~dose)
+g <- g + ggtitle("Boxplot Showing Tooth Growth\nby Supplement and Dose")
+g <- g + xlab("Supplement")
+g <- g + ylab("Tooth Length Growth")
+print(g)
+```
+
+##Basic summary of the data
+```{r dataSummary}
+summary(ToothGrowth)
+```
+##Hypothesis Tests
+We are going to perform 4 Hypothesis Tests with the information we observed in the data exploratory analysis:
+
+1. Prove that the mean of `VC` supplement is equal to the mean of `OJ` supplement
+
+$$H_0:\mu_{VC}=\mu_{OJ}\sim\mu_{VC}-\mu_{OJ}=0$$
+$$H_a:\mu_{VC}\neq\mu_{OJ}\sim\mu_{VC}-\mu_{OJ}\neq0$$
+
+```{r HypTest1}
+ojDose <- ToothGrowth[ToothGrowth$supp=="OJ",1]
+vcDose <- ToothGrowth[ToothGrowth$supp=="VC",1]
+htest <- t.test(vcDose,ojDose)
+htest
+```
+Result: with p value of `r round(htest$p.value*100,2)`% greater than 5%, and the $\mu=0$ is between the limits of the confidence interval [`r round(htest$conf.int[1],2)`,`r round(htest$conf.int[2],2)`] we can't reject the hypothesis $H_0$.
+
+2. Prove that the mean of `VC` supplement with a dose of 0.5 greater than the mean of `OJ` supplement with a dose of 0.5
+
+$$H_0:\mu_{VC}>\mu_{OJ}\sim\mu_{VC}-\mu_{OJ}>0$$
+$$H_a:\mu_{VC}\leq\mu_{Oj}\sim\mu_{VC}-\mu_{OJ}\leq0$$
+
+```{r HypTest2}
+ojDose <- ToothGrowth[ToothGrowth$supp=="OJ" & ToothGrowth$dose==0.5,1]
+vcDose <- ToothGrowth[ToothGrowth$supp=="VC" & ToothGrowth$dose==0.5,1]
+htest<-t.test(vcDose,ojDose,alternative = "less")
+htest
+```
+Result: with p value of `r round(htest$p.value*100,2)`% lower than 5%, and the $\mu=0$ is not between the limits of the confidence interval [-Inf,`r round(htest$conf.int[2],2)`] we can reject $H_0$.
+
+3. Prove that the mean of `VC` supplement with a dose of 1 greater than the mean of `OJ` supplement with a dose of 1
+
+$$H_0:\mu_{VC}>\mu_{OJ}\sim\mu_{VC}-\mu_{OJ}>0$$
+$$H_a:\mu_{VC}\leq\mu_{Oj}\sim\mu_{VC}-\mu_{OJ}\leq0$$
+
+```{r HypTest3}
+ojDose <- ToothGrowth[ToothGrowth$supp=="OJ" & ToothGrowth$dose==1.0,1]
+vcDose <- ToothGrowth[ToothGrowth$supp=="VC" & ToothGrowth$dose==1.0,1]
+htest <- t.test(vcDose,ojDose,alternative = "less")
+htest
+```
+Result: with p value of `r round(htest$p.value*100,2)`% lower than 5%, and the $\mu=0$ is not between the limits of the confidence interval [-Inf,`r round(htest$conf.int[2],2)`] we can reject $H_0$.
+
+4. Prove that the mean of `VC` supplement with a dose of 2 equal to the mean of `OJ` supplement with a dose of 1
+
+$$H_0:\mu_{VC}=\mu_{OJ}\sim\mu_{VC}-\mu_{OJ}=0$$
+$$H_a:\mu_{VC}\neq\mu_{Oj}\sim\mu_{VC}-\mu_{OJ}\neq0$$
+
+```{r HypTest4}
+ojDose <- ToothGrowth[ToothGrowth$supp=="OJ" & ToothGrowth$dose==2.0,1]
+vcDose <- ToothGrowth[ToothGrowth$supp=="VC" & ToothGrowth$dose==2.0,1]
+htest <- t.test(vcDose,ojDose)
+htest
+```
+Result: with p value of `r round(htest$p.value*100,2)`% greater than 5%, and the $\mu=0$ is  between the limits of the confidence interval [`r round(htest$conf.int[1],2)`,`r round(htest$conf.int[2],2)`] we can't reject $H_0$.
+
+5. Prove that the mean of 0.5 doses and 1.0 doses are greater than the 2.0 doses
+$$H_0:\mu_{0.5,1.0}>\mu_{2.0}\sim\mu_{0.5,1.0}-\mu_{2.0}>0$$
+$$H_a:\mu_{0.5,1.0}\leq\mu_{2.0}\sim\mu_{0.5,1.0}-\mu_{2.0}\leq0$$
+```{r HypTest5}
+Dose1.0 <- ToothGrowth[ToothGrowth$dose==0.5 | ToothGrowth$dose==1.0,1]
+Dose2.0 <- ToothGrowth[ToothGrowth$dose==2.0,1]
+htest <- t.test(Dose1.0,Dose2.0,alternative = "less")
+htest
+```
+Result: with p value of `r round(htest$p.value*100,2)`% lower than 5%, and the $\mu=0$ is  between the limits of the confidence interval [-Inf,`r round(htest$conf.int[2],2)`] we can reject $H_0$.
+
+##Conclusions and Assumptions
+In this investigation, we are assuming that the information of the ToothGrowth dataset is independent and the variances are unequal.
+With the results of the hypothesis tests we can conclude the following:
+
+1. If we don't take in consideration the doses both of the supplements have the same average in tooth growth.
+2. In the case of a dose of 0.5 mg/day the supplement that had a mayor average in tooth growth is the OJ supplement.
+3. For the doses of 1.0 mg/day the OJ supplement that had a greater average in tooth growth than the VC supplement.
+4. There is no difference in the average of tooth growth between both supplements if the doses are of 2.0 mg/day.
+5. Finally, the best of the doses in the average of tooth growth, if we don't consider the supplement, is of 2.0 mg/day.
